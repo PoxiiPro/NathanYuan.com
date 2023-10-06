@@ -1,0 +1,24 @@
+/* CSS tyling for the navigation bar */
+.navbar {
+    /* Remove default list styling */
+    list-style-type: none;
+    /* Center the navigation bar */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #006eff; /* blue nav bar background */
+}
+
+/* Style for each item in the navigation bar */
+.navbar li {
+    float: left; /* Align items horizontally */
+}
+
+/* Style for each link in the navigation bar */
+.navbar li a {
+    display: block;
+    color: rgb(241, 241, 241); /* Off white text color */
+    text-align: center;
+    padding: 14px 16px; /* Padding around text */
+    text-decoration: none; /* Remove underline from links */
+}
