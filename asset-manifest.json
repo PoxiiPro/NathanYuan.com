@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/NathanYuan.github.io/static/css/main.073c9b0a.css",
+    "main.js": "/NathanYuan.github.io/static/js/main.de3fa64d.js",
+    "static/js/787.30237536.chunk.js": "/NathanYuan.github.io/static/js/787.30237536.chunk.js",
+    "static/media/logo.svg": "/NathanYuan.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/NathanYuan.github.io/index.html",
+    "main.073c9b0a.css.map": "/NathanYuan.github.io/static/css/main.073c9b0a.css.map",
+    "main.de3fa64d.js.map": "/NathanYuan.github.io/static/js/main.de3fa64d.js.map",
+    "787.30237536.chunk.js.map": "/NathanYuan.github.io/static/js/787.30237536.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.de3fa64d.js"
+  ]
+}
