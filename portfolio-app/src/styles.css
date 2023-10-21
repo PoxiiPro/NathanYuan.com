@@ -2,13 +2,17 @@
 .navbar {
     /* Remove default list styling */
     list-style-type: none;
+    
     /* Center the navigation bar */
+    position: sticky; /* navbar stays at the top while scrolling */
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #006eff; /* blue nav bar background */
     display: flex;
     justify-content: center;
+    width: 100%;
+    z-index: 1;
 }
 
 /* Style for each item in the navigation bar */
@@ -18,6 +22,8 @@
 
 /* Style for each link in the navigation bar */
 .navbar li a {
+    font-family: Cambria, Arial, Lato;
+    font-size: 12px;
     display: block;
     color: rgb(241, 241, 241); /* Off white text color */
     text-align: center;
@@ -28,13 +34,48 @@
 /* /////////// CSS styling for the intro component ///////// */
 .intro {
     /* Positioning */
-    position: relative; /* or absolute, fixed, or sticky, depending on your needs */
+    position: relative;
+    margin: 0; 
+    
     height: 670px;
-    margin: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
 
-    /* Styling */
+    /* text */
     font-size: 32px;
-    color: black;
+    color: white;
+    font-family: Cambria, sans-serif, Arial;
     background-color: black;
+
   }
+
+.intro header {
+    padding-top: 60px;
+    font-family: Cambria, sans-serif, Arial;
+    font-size: 60px;
+    color: white;
+}
+
+.intro h1 {
+    margin: 0;
+    font-family: Cambria, sans-serif, Arial;
+    font-size: 30px;
+    color: white;
+}
+
+.intro h2 {
+    margin: 12px;
+    font-family: Cambria, sans-serif, Arial;
+    font-size: 18px;
+    color: #006eff;
+    text-decoration: none; /* Remove underline from links */
+    /* word-spacing: 3px; */
+}
+
+.intro a {
+    color: #006eff;
+    text-decoration: none; /* Remove underline from links */
+}
   
