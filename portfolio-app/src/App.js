@@ -6,7 +6,8 @@ import React from 'react';
 import Navbar from './navbar';
 
 // import router in order to display certain components on certain pages only
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
 // import intro component to display on index
 import Intro from './intro'; // import component i want to add
@@ -20,7 +21,7 @@ function App() {
       {/* these components are page specific */}
       <Router>
         <Routes> 
-          <Route path="/index.html" element={<Intro/>} />
+          <Route path="/" element={<Intro/>} />
         </Routes> 
       </Router>
     </div>
