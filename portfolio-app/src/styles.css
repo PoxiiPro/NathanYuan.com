@@ -1,4 +1,4 @@
-/* CSS tyling for the navigation bar */
+/* CSS styling for the navigation bar */
 .navbar {
     /* Remove default list styling */
     list-style-type: none;
@@ -7,6 +7,8 @@
     padding: 0;
     overflow: hidden;
     background-color: #006eff; /* blue nav bar background */
+    display: flex;
+    justify-content: center;
 }
 
 /* Style for each item in the navigation bar */
@@ -22,3 +24,17 @@
     padding: 14px 16px; /* Padding around text */
     text-decoration: none; /* Remove underline from links */
 }
+
+/* /////////// CSS styling for the intro component ///////// */
+.intro {
+    /* Positioning */
+    position: relative; /* or absolute, fixed, or sticky, depending on your needs */
+    height: 670px;
+    margin: 0;
+
+    /* Styling */
+    font-size: 32px;
+    color: black;
+    background-color: black;
+  }
+  

@@ -5,24 +5,24 @@ import './App.css';
 import React from 'react';
 import Navbar from './navbar';
 
+// import router in order to display certain components on certain pages only
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+// import intro component to display on index
+import Intro from './intro'; // import component i want to add
+
 function App() {
   return (
     <div className="App">
-      <Navbar />
-        {/* <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header> */}
+      {/* nav bar is global, on all webpages */}
+      <Navbar/>
+
+      {/* these components are page specific */}
+      <Router>
+        <Routes> 
+          <Route path="/index.html" element={<Intro/>} />
+        </Routes> 
+      </Router>
     </div>
   );
 }
