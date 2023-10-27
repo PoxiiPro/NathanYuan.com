@@ -1,10 +1,17 @@
-/* CSS styling for the navigation bar */
+ /* change default margin and pagging for entire page */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* /////////// CSS styling for the nav bar component ///////// */
 .navbar {
     /* Remove default list styling */
     list-style-type: none;
     
     /* Center the navigation bar */
-    position: sticky; /* navbar stays at the top while scrolling */
+    position: fixed; /* navbar stays at the top while scrolling */
+    top: 0;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -21,7 +28,7 @@
 }
 
 /* Style for each link in the navigation bar */
-.navbar li a {
+.navbar li .link {
     font-family: Cambria, Arial, Lato;
     font-size: 12px;
     display: block;
@@ -34,7 +41,7 @@
 /* /////////// CSS styling for the intro component ///////// */
 .intro {
     /* Positioning */
-    position: relative;
+    /* position: relative; */
     margin: 0; 
     
     height: 670px;
@@ -47,7 +54,7 @@
     font-size: 32px;
     color: white;
     font-family: Cambria, sans-serif, Arial;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.951);
 
   }
 
@@ -55,6 +62,7 @@
     padding-top: 60px;
     font-family: Cambria, sans-serif, Arial;
     font-size: 60px;
+    font-weight: 700;
     color: white;
 }
 
@@ -62,13 +70,16 @@
     margin: 0;
     font-family: Cambria, sans-serif, Arial;
     font-size: 30px;
+    font-weight: 200;
     color: white;
 }
 
 .intro h2 {
     margin: 12px;
     font-family: Cambria, sans-serif, Arial;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 200;
+
     color: #006eff;
     text-decoration: none; /* Remove underline from links */
     /* word-spacing: 3px; */
@@ -78,4 +89,39 @@
     color: #006eff;
     text-decoration: none; /* Remove underline from links */
 }
-  
+
+.intro img {
+    width: 35%;
+    position: relative;
+    top: -162px;
+}
+
+/* /////////// CSS styling for the tile component ///////// */
+.tile-container {
+    margin-top: 50px;    
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.tile {
+    font-family: Cambria, sans-serif, Arial;
+    color: rgba(0, 0, 0, 0.951);
+    width: 50%;
+}
+
+.tile h1 {
+    margin: 0;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.tile h2 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.tile p {
+    font-size: 20px;
+    font-weight: 200;
+}
