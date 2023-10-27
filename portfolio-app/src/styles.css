@@ -48,7 +48,7 @@ body, html {
     bottom: 0;
     left: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 3;
 
     /* text */
     font-size: 32px;
@@ -64,6 +64,8 @@ body, html {
     font-size: 60px;
     font-weight: 700;
     color: white;
+    z-index: 2;
+
 }
 
 .intro h1 {
@@ -72,6 +74,7 @@ body, html {
     font-size: 30px;
     font-weight: 200;
     color: white;
+    z-index: 2;
 }
 
 .intro h2 {
@@ -79,6 +82,7 @@ body, html {
     font-family: Cambria, sans-serif, Arial;
     font-size: 20px;
     font-weight: 200;
+    z-index: 2;
 
     color: #006eff;
     text-decoration: none; /* Remove underline from links */
@@ -88,12 +92,15 @@ body, html {
 .intro a {
     color: #006eff;
     text-decoration: none; /* Remove underline from links */
+    z-index: 2;
 }
 
 .intro img {
     width: 35%;
-    position: relative;
-    top: -162px;
+    min-height: 427px;
+    min-width: 427px;
+    padding-top: 50px;
+    z-index: 2;
 }
 
 /* /////////// CSS styling for the tile component ///////// */
@@ -107,6 +114,7 @@ body, html {
     font-family: Cambria, sans-serif, Arial;
     color: rgba(0, 0, 0, 0.951);
     width: 50%;
+    height: 670px;
 }
 
 .tile h1 {
