@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/NathanYuan.github.io/static/css/main.d5a990c6.css",
-    "main.js": "/NathanYuan.github.io/static/js/main.fc0e49cd.js",
+    "main.css": "/NathanYuan.github.io/static/css/main.e957616f.css",
+    "main.js": "/NathanYuan.github.io/static/js/main.ec1f7802.js",
     "static/js/787.30237536.chunk.js": "/NathanYuan.github.io/static/js/787.30237536.chunk.js",
+    "static/media/intro-headshot-no-bg.png": "/NathanYuan.github.io/static/media/intro-headshot-no-bg.8747f7e66885485fe47b.png",
     "index.html": "/NathanYuan.github.io/index.html",
-    "main.d5a990c6.css.map": "/NathanYuan.github.io/static/css/main.d5a990c6.css.map",
-    "main.fc0e49cd.js.map": "/NathanYuan.github.io/static/js/main.fc0e49cd.js.map",
+    "main.e957616f.css.map": "/NathanYuan.github.io/static/css/main.e957616f.css.map",
+    "main.ec1f7802.js.map": "/NathanYuan.github.io/static/js/main.ec1f7802.js.map",
     "787.30237536.chunk.js.map": "/NathanYuan.github.io/static/js/787.30237536.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d5a990c6.css",
-    "static/js/main.fc0e49cd.js"
+    "static/css/main.e957616f.css",
+    "static/js/main.ec1f7802.js"
   ]
 }
