@@ -19,7 +19,7 @@ body, html {
     display: flex;
     justify-content: center;
     width: 100%;
-    z-index: 1;
+    z-index: 99999;
 }
 
 /* Style for each item in the navigation bar */
@@ -41,14 +41,14 @@ body, html {
 /* /////////// CSS styling for the intro component ///////// */
 .intro {
     /* Positioning */
-    /* position: relative; */
+    /* position: absolute; */
     margin: 0; 
     
     height: 670px;
     bottom: 0;
     left: 0;
     width: 100%;
-    z-index: 3;
+    z-index: 1;
 
     /* text */
     font-size: 32px;
@@ -64,7 +64,7 @@ body, html {
     font-size: 60px;
     font-weight: 700;
     color: white;
-    z-index: 2;
+    z-index: 1;
 
 }
 
@@ -74,15 +74,17 @@ body, html {
     font-size: 30px;
     font-weight: 200;
     color: white;
-    z-index: 2;
+    z-index: 1;
 }
 
 .intro h2 {
+    position: relative;
+
     margin: 12px;
     font-family: Cambria, sans-serif, Arial;
     font-size: 20px;
     font-weight: 200;
-    z-index: 2;
+    z-index: 1;
 
     color: #006eff;
     text-decoration: none; /* Remove underline from links */
@@ -92,32 +94,40 @@ body, html {
 .intro a {
     color: #006eff;
     text-decoration: none; /* Remove underline from links */
-    z-index: 2;
+    z-index: 1;
 }
 
 .intro img {
-    width: 35%;
-    min-height: 427px;
-    min-width: 427px;
-    padding-top: 50px;
-    z-index: 2;
+    width: auto;
+    height: 441px;
+    padding-top: 45px;
+    z-index: 1;
+    position: static;
+    bottom: 0;
 }
 
 /* /////////// CSS styling for the tile component ///////// */
 .tile-container {
+    padding-top: 10px;
     margin-top: 50px;    
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    gap: 10px;
+    height: 850px;
+    padding-bottom: 10px;
   }
 
 .tile {
     font-family: Cambria, sans-serif, Arial;
     color: rgba(0, 0, 0, 0.951);
-    width: 50%;
-    height: 670px;
+    width: 49%;
+    background-color: #efefef;
 }
 
 .tile h1 {
+    padding-top: 50px;
     margin: 0;
     font-size: 60px;
     font-weight: 700;
@@ -126,10 +136,77 @@ body, html {
 .tile h2 {
     margin: 0;
     font-size: 30px;
+    font-weight: 400;
+}
+
+.tile h3 {
+    margin: 0;
+    font-size: 20px;
     font-weight: 200;
 }
 
 .tile p {
     font-size: 20px;
     font-weight: 200;
+    white-space: pre-wrap;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.tile img {
+    position: static;
+    width: 300px;
+    height: 300px;
+    bottom: 0;
+}
+
+/* /////////// CSS styling for a full tile component ///////// */
+
+.full-tile {
+    font-family: Cambria, sans-serif, Arial;
+    color: #efefef;
+    background-color: rgba(0, 0, 0, 0.951);
+    padding-top: 10px;
+    margin-top: 50px;
+    justify-content: center;
+    margin: 0;
+    gap: 10px;
+    /* height: 670px; */
+    display: flex;
+    height: auto;
+    max-height: 670px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.full-tile h1 {
+    padding-top: 50px;
+    margin: 0;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.full-tile h2 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.full-tile h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.full-tile p {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.full-tile img {
+    height: 50%;
+    width: 50%;
+    bottom: 0;
+    position: static;
 }
