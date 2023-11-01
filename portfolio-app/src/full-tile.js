@@ -1,19 +1,17 @@
-// import React from 'react';
-import React, { useState } from 'react';
+import React from 'react';
 
-const FullTile = ({ name, title, skills, desc, img }) => {
-  const [imgLoaded, setImgLoaded] = useState(true);
-  const handleImgError = () => {
-    setImgLoaded(false);
-  
-  };
+function FullTile ({ data }) {
   return (
     <div className="full-tile">
-      <h1>{name}</h1>
-      <h2>{title}</h2>
-      <h3>{skills}</h3>
-      <p>{desc}</p>
-      {img && <img src={img} onError={handleImgError} />}
+    {data.elements.map((item, index) => (
+      <div key={index}>
+        <h1>{item.name}</h1>
+        <h2>{item.title}</h2>
+        <h3>{item.skill}</h3>
+        <p>{item.desc}</p>
+        {item.img && <img src={item.img}/>}
+      </div>
+    ))}
     </div>
   );
 }

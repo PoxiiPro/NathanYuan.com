@@ -6,10 +6,13 @@ import React from 'react';
 import Navbar from './navbar';
 import Intro from './intro';
 import Tile from './tile';
-import { dataP } from './project-data.js';
 import FullTile from './full-tile';
+
+// data files for tiles
 import { dataS } from './skill-data.js';
+import { dataE } from './edu-data.js';
 import { dataW } from './work-data.js';
+import { dataP } from './project-data.js';
 
 // import ucsc photo of me
 import ucsc from './src images/ucsc.png'
@@ -21,7 +24,7 @@ import ucsc from './src images/ucsc.png'
 // import project data to display in tile component
 
 dataP.forEach(item => console.log(item));
-dataS.forEach(item => console.log(item));
+// dataS.forEach(item => console.log(item));
 dataW.forEach(item => console.log(item));
 
 function App() {
@@ -41,20 +44,23 @@ function App() {
         ))}
       </div>
 
-      <div id="certs">
-        <FullTile title={"Apple Certified iOS Technician (ACiT)"} />
-      </div>
-      <div className="mini-tile-container" id="skills">
+      {/* <div className="full-tile" id="skills">
         {dataS.map((item, index) => (
-        <Tile key={index} skill={item.skill} img={item.img} />
+        <FullTile key={index} skill={item.skill} img={item.img} />
         ))}
+      </div> */}
+
+      <div id='skills'>
+        <FullTile data={dataS}/>
       </div>
+
       <div className="tile-container" id="work">
         {dataW.map((item, index) => (
         <Tile key={index} name={item.name} title={item.title} skills={item.skills} img={item.img}/>
         ))}
       </div>
-      <div id="edu">
+
+      <div className="full-tile" id="edu">
         <FullTile name={"University of California, Santa Cruz"} title={"Bachelor's Degree in Computer Science"} skills={"June 2023"} img={ucsc}/>
       </div>
 

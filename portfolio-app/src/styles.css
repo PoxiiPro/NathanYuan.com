@@ -40,8 +40,6 @@ body, html {
 
 /* /////////// CSS styling for the intro component ///////// */
 .intro {
-    /* Positioning */
-    /* position: absolute; */
     margin: 0; 
     
     height: 670px;
@@ -65,7 +63,6 @@ body, html {
     font-weight: 700;
     color: white;
     z-index: 1;
-
 }
 
 .intro h1 {
@@ -109,14 +106,13 @@ body, html {
 /* /////////// CSS styling for the tile component ///////// */
 .tile-container {
     padding-top: 10px;
-    margin-top: 50px;    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0;
     gap: 10px;
     height: 850px;
     padding-bottom: 10px;
+    z-index: 1;
   }
 
 .tile {
@@ -167,17 +163,11 @@ body, html {
     color: #efefef;
     background-color: rgba(0, 0, 0, 0.951);
     padding-top: 10px;
-    margin-top: 50px;
-    justify-content: center;
-    margin: 0;
     gap: 10px;
-    /* height: 670px; */
-    display: flex;
     height: auto;
     max-height: 670px;
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    z-index: 1;
 }
 
 .full-tile h1 {
