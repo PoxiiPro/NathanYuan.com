@@ -1,16 +1,20 @@
 {
   "files": {
-    "main.css": "/NathanYuan.github.io/static/css/main.e957616f.css",
-    "main.js": "/NathanYuan.github.io/static/js/main.ec1f7802.js",
+    "main.css": "/NathanYuan.github.io/static/css/main.15de23f9.css",
+    "main.js": "/NathanYuan.github.io/static/js/main.0ee373a4.js",
     "static/js/787.30237536.chunk.js": "/NathanYuan.github.io/static/js/787.30237536.chunk.js",
-    "static/media/intro-headshot-no-bg.png": "/NathanYuan.github.io/static/media/intro-headshot-no-bg.8747f7e66885485fe47b.png",
+    "static/media/ucsc.png": "/NathanYuan.github.io/static/media/ucsc.913a6c623736ca3ea2ef.png",
+    "static/media/cartier.png": "/NathanYuan.github.io/static/media/cartier.b952dbf2053f5f16c37e.png",
+    "static/media/intro-headshot-no-bg.png": "/NathanYuan.github.io/static/media/intro-headshot-no-bg.e7d6a7d92322f8cc7cec.png",
+    "static/media/appleLogo.png": "/NathanYuan.github.io/static/media/appleLogo.f696af0c230cbcc5207c.png",
+    "static/media/apple-tech.png": "/NathanYuan.github.io/static/media/apple-tech.642819aaa65e6df92bd1.png",
     "index.html": "/NathanYuan.github.io/index.html",
-    "main.e957616f.css.map": "/NathanYuan.github.io/static/css/main.e957616f.css.map",
-    "main.ec1f7802.js.map": "/NathanYuan.github.io/static/js/main.ec1f7802.js.map",
+    "main.15de23f9.css.map": "/NathanYuan.github.io/static/css/main.15de23f9.css.map",
+    "main.0ee373a4.js.map": "/NathanYuan.github.io/static/js/main.0ee373a4.js.map",
     "787.30237536.chunk.js.map": "/NathanYuan.github.io/static/js/787.30237536.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e957616f.css",
-    "static/js/main.ec1f7802.js"
+    "static/css/main.15de23f9.css",
+    "static/js/main.0ee373a4.js"
   ]
 }
