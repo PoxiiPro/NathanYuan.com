@@ -15,7 +15,7 @@ import { dataW } from './work-data.js';
 import { dataP } from './project-data.js';
 
 // import ucsc photo of me
-import ucsc from './src images/ucsc.png'
+// import ucsc from './src images/ucsc.png'
 
 // import router in order to display certain components on certain pages only
 // import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -50,7 +50,7 @@ function App() {
         ))}
       </div> */}
 
-      <div id='skills'>
+      <div className="full-tile" id='skills'>
         <FullTile data={dataS}/>
       </div>
 
@@ -61,7 +61,8 @@ function App() {
       </div>
 
       <div className="full-tile" id="edu">
-        <FullTile name={"University of California, Santa Cruz"} title={"Bachelor's Degree in Computer Science"} skills={"June 2023"} img={ucsc}/>
+        {/* <FullTile name={"University of California, Santa Cruz"} title={"Bachelor's Degree in Computer Science"} skills={"June 2023"} img={ucsc}/> */}
+        <FullTile data={dataE}/>
       </div>
 
       {/* these components are page specific */}

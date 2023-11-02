@@ -5,7 +5,7 @@ export const dataP = [
   desc:
   "- Worked within a team to develop a python based sentiment analysis model evaluating written language that can predict if the overall consensus is positive or negative giving a useful indication how users feel about an experience \n\n -Utilized large amounts of classified data to train model and cast predictions and optimize parameters" 
   },
-  { name: "UC Berkeley Inspired Pacman AI Agents", title: "AI Engineer", skills: "Artifical Inteligence, Python",
+  { name: "Pacman AI Agents", title: "AI Engineer", skills: "Artifical Inteligence, Python",
   desc:
   "- Worked within a team of three to develop an ai defensive and offensive agent that operated simultaneously \n\n- Competed against other team developed ai defensive and offensive agents \n\n- Developed reflex, minimax, alpha beta, expectimax, q learning, value iteration, and dfs/bfs pacman search agents by programming models/algorithms and training them" 
   },

@@ -110,7 +110,6 @@ body, html {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    height: 850px;
     padding-bottom: 10px;
     z-index: 1;
   }
@@ -118,7 +117,10 @@ body, html {
 .tile {
     font-family: Cambria, sans-serif, Arial;
     color: rgba(0, 0, 0, 0.951);
-    width: 49%;
+    width: 32.3%;
+    min-height: 450px;
+    height: auto;
+    /* max-height: 450px; */
     background-color: #efefef;
 }
 
@@ -127,6 +129,8 @@ body, html {
     margin: 0;
     font-size: 60px;
     font-weight: 700;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .tile h2 {
@@ -151,8 +155,8 @@ body, html {
 
 .tile img {
     position: static;
-    width: 300px;
-    height: 300px;
+    width: 170px;
+    height: 170px;
     bottom: 0;
 }
 
@@ -163,7 +167,7 @@ body, html {
     color: #efefef;
     background-color: rgba(0, 0, 0, 0.951);
     padding-top: 10px;
-    gap: 10px;
+    /* gap: 10px; */
     height: auto;
     max-height: 670px;
     justify-content: center;

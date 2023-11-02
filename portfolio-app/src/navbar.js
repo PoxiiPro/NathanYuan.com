@@ -14,7 +14,7 @@ const Navbar = () => {
                 
                 <li><Link className="link" smooth to="#intro">Nathan Yuan</Link></li>
                 <li><Link className="link" smooth to="#projects">Projects</Link></li>
-                <li><Link className="link" smooth to="#certs">Certificates</Link></li>
+                {/* <li><Link className="link" smooth to="#certs">Certificates</Link></li> */}
                 <li><Link className="link" smooth to="#skills">Skills</Link></li>
                 <li><Link className="link" smooth to="#work">Work Experience</Link></li>
                 <li><Link className="link" smooth to="#edu">Education</Link></li>

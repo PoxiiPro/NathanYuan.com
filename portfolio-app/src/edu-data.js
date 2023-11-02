@@ -1,7 +1,8 @@
 // all data for my edu
-import cartier from './src images/cartier.png'
+import ucsc from './src images/ucsc.png'
 
 export const dataE = [
-  { name: "Boutique Assistant", title: "Cartier, San Francisco CA", skills: "Dec 2021 - January 2022",
-  desc: "", img: cartier},
+  { name: "University of California, Santa Cruz", title: "Bachelor's Degree in Computer Science", 
+  skills: "June 2023",img: ucsc},
 ];
+
