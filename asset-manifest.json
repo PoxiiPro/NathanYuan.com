@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/NathanYuan.github.io/static/css/main.76c31639.css",
-    "main.js": "/NathanYuan.github.io/static/js/main.466d0b58.js",
-    "static/js/787.30237536.chunk.js": "/NathanYuan.github.io/static/js/787.30237536.chunk.js",
-    "static/media/ucsc.png": "/NathanYuan.github.io/static/media/ucsc.913a6c623736ca3ea2ef.png",
-    "static/media/cartier.png": "/NathanYuan.github.io/static/media/cartier.b952dbf2053f5f16c37e.png",
-    "static/media/intro-headshot-no-bg.png": "/NathanYuan.github.io/static/media/intro-headshot-no-bg.e7d6a7d92322f8cc7cec.png",
-    "static/media/appleLogo.png": "/NathanYuan.github.io/static/media/appleLogo.f696af0c230cbcc5207c.png",
-    "static/media/apple-tech.png": "/NathanYuan.github.io/static/media/apple-tech.642819aaa65e6df92bd1.png",
-    "index.html": "/NathanYuan.github.io/index.html",
-    "main.76c31639.css.map": "/NathanYuan.github.io/static/css/main.76c31639.css.map",
-    "main.466d0b58.js.map": "/NathanYuan.github.io/static/js/main.466d0b58.js.map",
-    "787.30237536.chunk.js.map": "/NathanYuan.github.io/static/js/787.30237536.chunk.js.map"
+    "main.css": "/static/css/main.76c31639.css",
+    "main.js": "/static/js/main.d6249a9e.js",
+    "static/js/787.30237536.chunk.js": "/static/js/787.30237536.chunk.js",
+    "static/media/ucsc.png": "/static/media/ucsc.913a6c623736ca3ea2ef.png",
+    "static/media/cartier.png": "/static/media/cartier.b952dbf2053f5f16c37e.png",
+    "static/media/intro-headshot-no-bg.png": "/static/media/intro-headshot-no-bg.e7d6a7d92322f8cc7cec.png",
+    "static/media/appleLogo.png": "/static/media/appleLogo.f696af0c230cbcc5207c.png",
+    "static/media/apple-tech.png": "/static/media/apple-tech.642819aaa65e6df92bd1.png",
+    "index.html": "/index.html",
+    "main.76c31639.css.map": "/static/css/main.76c31639.css.map",
+    "main.d6249a9e.js.map": "/static/js/main.d6249a9e.js.map",
+    "787.30237536.chunk.js.map": "/static/js/787.30237536.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.76c31639.css",
-    "static/js/main.466d0b58.js"
+    "static/js/main.d6249a9e.js"
   ]
 }
