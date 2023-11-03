@@ -53,8 +53,7 @@ body, html {
     color: white;
     font-family: Cambria, sans-serif, Arial;
     background-color: rgba(0, 0, 0, 0.951);
-
-  }
+}
 
 .intro header {
     padding-top: 60px;
@@ -96,7 +95,7 @@ body, html {
 
 .intro img {
     width: auto;
-    height: 441px;
+    height: 439px;
     padding-top: 45px;
     z-index: 1;
     position: static;
@@ -166,11 +165,9 @@ body, html {
     font-family: Cambria, sans-serif, Arial;
     color: #efefef;
     background-color: rgba(0, 0, 0, 0.951);
-    padding-top: 10px;
     /* gap: 10px; */
     height: auto;
     max-height: 670px;
-    justify-content: center;
     z-index: 1;
 }
 
@@ -199,8 +196,40 @@ body, html {
 }
 
 .full-tile img {
-    height: 50%;
-    width: 50%;
+    /* height: 50%; */
+    width: auto;
+    max-height: 467px;
     bottom: 0;
     position: static;
+}
+
+.full-tile-container {
+    font-family: Cambria, sans-serif, Arial;
+    color: #efefef;
+    background-color: rgba(0, 0, 0, 0.951);
+    /* gap: 10px; */
+    height: auto;
+    max-height: 670px;
+    z-index: 1;
+
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+.full-tile-container h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 200;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.full-tile-container img {
+    height: 50%;
+    width: auto;
+    max-height: 100px;
 }
