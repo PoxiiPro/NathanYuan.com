@@ -12,7 +12,7 @@ const Navbar = () => {
             <ul className="navbar">
                 {/* <li><a href="">Nathan Yuan</a></li> */}
                 
-                <li><Link className="link" smooth to="#intro">Nathan Yuan</Link></li>
+                <li><Link className="link" smooth to="#intro">(this website is a WIP) Nathan Yuan</Link></li>
                 <li><Link className="link" smooth to="#projects">Projects</Link></li>
                 {/* <li><Link className="link" smooth to="#certs">Certificates</Link></li> */}
                 <li><Link className="link" smooth to="#skills">Skills</Link></li>
