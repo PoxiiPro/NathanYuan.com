@@ -132,41 +132,59 @@ body, html {
     gap: 10px;
     padding-bottom: 10px;
     z-index: 1;
+
+    width: calc(100vw); 
   }
 
 .tile {
     font-family: Cambria, sans-serif, Arial;
     color: rgba(0, 0, 0, 0.951);
-    width: 32.3%;
-    min-height: 450px;
-    height: auto;
+    /* width: 32.3%; */
+    
+    /* min-height: 450px; */
+    /* height: auto; */
     /* max-height: 450px; */
     background-color: #efefef;
+
+    /* make the tile stay as a square and scale with viewport */
+    width: calc(100vw); 
+    /* height: calc(100vw - 0px);  */
+
+    /* max of 3 tiles per row */
+    max-width: 32.4%;
+    height: 0;
+    padding-bottom: 30%;
 }
 
 .tile h1 {
-    padding-top: 50px;
+    padding-top: 30px;
     margin: 0;
-    font-size: 60px;
+    /* font-size: 55px; */
+    font-size: 4vw;
     font-weight: 700;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .tile h2 {
     margin: 0;
-    font-size: 30px;
+    /* font-size: 30px; */
+    font-size: 2vw;
     font-weight: 400;
 }
 
 .tile h3 {
     margin: 0;
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: 1.5vw;
     font-weight: 200;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .tile p {
     font-size: 20px;
+    font-size: 1vw;
     font-weight: 200;
     white-space: pre-wrap;
     padding-left: 30px;
@@ -175,9 +193,12 @@ body, html {
 
 .tile img {
     position: static;
-    width: 170px;
-    height: 170px;
-    bottom: 0;
+    /* width: 170px; */
+    width: 12vw;
+    /* height: 170px; */
+    height: 12lvw;
+    /* padding-bottom: 100%; */
+    /* bottom: 0; */
 }
 
 /* /////////// CSS styling for a full tile component ///////// */
