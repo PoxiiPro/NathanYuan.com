@@ -13,7 +13,7 @@ const Tile = ({ name, title, skills, desc, img }) => {
       <h2>{title}</h2>
       <h3>{skills}</h3>
       <p>{desc}</p>
-      {img && <img src={img} onError={handleImgError} />}
+      {img && <img src={img} alt='' onError={handleImgError} />}
     </div>
   );
 }
