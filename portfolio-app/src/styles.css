@@ -1,28 +1,13 @@
-/* mobile view: */
-[class*="col-"] {
-    width: 100%;
-}
+/* /////////// CSS styling for mobile view ///////// */
+@media (max-width: 500px) {
 
-@media only screen and (min-width: 768px) {
-    /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
 }
 
 /* change default margin and pagging for entire page */
 body, html {
     margin: 0;
     padding: 0;
+    width: 100vw;
 }
 
 /* /////////// CSS styling for the nav bar component ///////// */
@@ -39,8 +24,8 @@ body, html {
     background-color: #006eff; /* blue nav bar background */
     display: flex;
     justify-content: center;
-    width: 100%;
     z-index: 99999;
+    width: 100vw;
 }
 
 /* Style for each item in the navigation bar */
@@ -63,23 +48,19 @@ body, html {
 .intro {
     margin: 0; 
     
-    height: 670px;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    height: 40vw;
+    width: 100vw;
     z-index: 1;
-
-    /* text */
-    font-size: 32px;
-    color: white;
-    font-family: Cambria, sans-serif, Arial;
+    position: relative;
+    display: flex;
+    justify-content: center;
     background-color: rgba(0, 0, 0, 0.951);
 }
 
 .intro header {
     padding-top: 60px;
     font-family: Cambria, sans-serif, Arial;
-    font-size: 60px;
+    font-size: 5vw;
     font-weight: 700;
     color: white;
     z-index: 1;
@@ -88,18 +69,16 @@ body, html {
 .intro h1 {
     margin: 0;
     font-family: Cambria, sans-serif, Arial;
-    font-size: 30px;
+    font-size: 3vw;
     font-weight: 200;
     color: white;
     z-index: 1;
 }
 
 .intro h2 {
-    position: relative;
-
     margin: 12px;
     font-family: Cambria, sans-serif, Arial;
-    font-size: 20px;
+    font-size: 1.8vw;
     font-weight: 200;
     z-index: 1;
 
@@ -115,12 +94,13 @@ body, html {
 }
 
 .intro img {
-    width: auto;
-    height: 439px;
-    padding-top: 45px;
+    width: 23.1vw;
+    height: 23.1vw;
     z-index: 1;
-    position: static;
-    bottom: 0;
+    position: absolute;
+    bottom: -0.8vw;
+    left: 38vw;
+    right: 33vw;
 }
 
 /* /////////// CSS styling for the tile component ///////// */
