@@ -1,0 +1,3 @@
+- Static website to house info for my portfolio
+- HTML and CSS for the front end
+- Used React.js to learn more front end technologies and create components that can be reused across the website
