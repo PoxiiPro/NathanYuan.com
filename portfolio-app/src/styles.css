@@ -196,19 +196,22 @@ body, html {
 .full-tile h1 {
     padding-top: 50px;
     margin: 0;
-    font-size: 60px;
+    /* font-size: 60px; */
+    font-size: 5vw;
     font-weight: 700;
 }
 
 .full-tile h2 {
     margin: 0;
-    font-size: 30px;
+    /* font-size: 30px; */
+    font-size: 3vw;
     font-weight: 400;
 }
 
 .full-tile h3 {
     margin: 0;
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: 1.8vw;
     font-weight: 200;
 }
 
@@ -219,11 +222,15 @@ body, html {
 
 .full-tile img {
     /* height: 50%; */
-    width: auto;
-    max-height: 467px;
+    /* width: auto; */
+    /* max-height: 467px; */
+    max-height: 50vh;
+    max-width: 60vw;
     bottom: 0;
     position: static;
 }
+
+/* /////////// CSS styling for list of tiles component ///////// */
 
 .full-tile-container {
     font-family: Cambria, sans-serif, Arial;
@@ -231,7 +238,9 @@ body, html {
     background-color: rgba(0, 0, 0, 0.951);
     /* gap: 10px; */
     height: auto;
-    max-height: 670px;
+    /* max-height: 670px; */
+    max-height: 70vh;
+
     z-index: 1;
 
     justify-content: center;
@@ -242,16 +251,18 @@ body, html {
 
 }
 
-.full-tile-container h3 {
+.full-tile-container h4 {
     margin: 0;
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: 1.2vw;
     font-weight: 200;
     padding-left: 10px;
     padding-right: 10px;
 }
 
 .full-tile-container img {
-    height: 50%;
+    /* height: 50%; */
+    height: 8vh;
     width: auto;
     max-height: 100px;
 }
