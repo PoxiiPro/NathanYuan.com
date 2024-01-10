@@ -1,20 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.13e5458a.css",
-    "main.js": "/static/js/main.d5ba5c97.js",
+    "main.css": "/static/css/main.eeb7b64e.css",
+    "main.js": "/static/js/main.7a8318bd.js",
     "static/js/787.30237536.chunk.js": "/static/js/787.30237536.chunk.js",
     "static/media/ucsc.png": "/static/media/ucsc.913a6c623736ca3ea2ef.png",
     "static/media/cartier.png": "/static/media/cartier.b952dbf2053f5f16c37e.png",
     "static/media/intro-headshot-no-bg.png": "/static/media/intro-headshot-no-bg.e7d6a7d92322f8cc7cec.png",
+    "static/media/js.png": "/static/media/js.03706b8cb7847e66ce66.png",
+    "static/media/python.png": "/static/media/python.d7a21d969a68b01c2b64.png",
     "static/media/appleLogo.png": "/static/media/appleLogo.f696af0c230cbcc5207c.png",
     "static/media/apple-tech.png": "/static/media/apple-tech.642819aaa65e6df92bd1.png",
+    "static/media/html.png": "/static/media/html.7f6865c5994e38a7c02e.png",
+    "static/media/css.png": "/static/media/css.bc75ccc78e3bf74f8aed.png",
     "index.html": "/index.html",
-    "main.13e5458a.css.map": "/static/css/main.13e5458a.css.map",
-    "main.d5ba5c97.js.map": "/static/js/main.d5ba5c97.js.map",
+    "main.eeb7b64e.css.map": "/static/css/main.eeb7b64e.css.map",
+    "main.7a8318bd.js.map": "/static/js/main.7a8318bd.js.map",
     "787.30237536.chunk.js.map": "/static/js/787.30237536.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.13e5458a.css",
-    "static/js/main.d5ba5c97.js"
+    "static/css/main.eeb7b64e.css",
+    "static/js/main.7a8318bd.js"
   ]
 }
