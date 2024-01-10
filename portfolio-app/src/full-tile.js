@@ -18,6 +18,7 @@ function FullTile ({ data }) {
         {/* {item.img && <img src={item.img} alt=''/>} */}
         {/* imgSize(item.img[0]) */}
         {item.img[0] && <img src={item.img[0]} alt=''/>}
+        <h4>{item.tag}</h4>
       </div>
     ))}
     </div>
