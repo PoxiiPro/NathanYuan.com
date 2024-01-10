@@ -323,8 +323,8 @@ body, html {
     color: #efefef;
     background-color: rgba(0, 0, 0, 0.951);
     /* gap: 10px; */
-    height: auto;
-    max-height: 670px;
+    max-height: 60vh;
+    width: 100vw;
     z-index: 1;
 }
 
@@ -359,8 +359,8 @@ body, html {
     /* height: 50%; */
     /* width: auto; */
     /* max-height: 467px; */
-    max-height: 50vh;
-    max-width: 60vw;
+    max-height: 32.7vh;
+    max-width: auto;
     bottom: 0;
     position: static;
 }
@@ -387,7 +387,9 @@ body, html {
 }
 
 .full-tile-container h4 {
-    margin: 0;
+    margin-bottom: 5vh;
+    margin-top: -0.5vh;
+
     /* font-size: 20px; */
     font-size: 1.2vw;
     font-weight: 200;
