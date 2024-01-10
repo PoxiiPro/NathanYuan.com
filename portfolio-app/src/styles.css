@@ -1,6 +1,141 @@
 /* /////////// CSS styling for mobile view ///////// */
 @media (max-width: 500px) {
+    .navbar {
+        /* Center the navigation bar */
+        position: fixed; /* navbar stays at the top while scrolling */
+        top: 0;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #006eff; /* blue nav bar background */
+        z-index: 9999;
+        width: 100vw;
+        height: 8vw;
+    }
 
+    .navbar li {
+        position: absolute;
+        left: -100%; /* Position off-screen */
+        transition: left 0.5s ease; /* Smooth transition */    
+    }
+
+    /* mobile view but not hamburger expanded */
+    .navbar .link {
+        font-family: Cambria, Arial, Lato;
+        font-size: 12px;
+        color: rgb(241, 241, 241); /* Off white text color */
+        text-align: center;
+        padding: 2vw 3vw; /* Padding around text */
+        text-decoration: none; /* Remove underline from links */
+    }
+
+    /* hamburger icon */
+    .navbar svg {
+        padding-top: 1vw;
+        height: 5vw;
+        list-style-type: none;
+        margin-left: 68vw;
+        margin-right: 3vw;
+    }
+
+    /* navbar list that expands when hamburger is tapped */
+    .navbar.open {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        background-color: #006eff;
+        transition: 0.5s; /* Smooth transition */
+        z-index: 99999;
+        display: block;
+    }
+
+    .navbar.open li {
+        left: 0;
+        padding-top: 10vh;
+    }
+
+    /* nav items after hamburger expansion */
+    .navbar.open li .link {
+        font-family: Cambria, Arial, Lato;
+        font-size: 5vw;
+        color: rgb(241, 241, 241); /* Off white text color */
+        padding: 14px 16px; /* Padding around text */
+        text-decoration: none; /* Remove underline from links */
+    }
+
+    /* /////////// CSS styling for the intro component ///////// */
+    .intro {
+        margin: 0; 
+        
+        height: 50vh;
+        width: 100vw;
+        z-index: 1;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.951);
+    }
+
+    .intro header {
+        padding-top: 60px;
+        font-family: Cambria, sans-serif, Arial;
+        font-size: 5vw;
+        font-weight: 700;
+        color: white;
+        z-index: 1;
+    }
+
+    .intro h1 {
+        margin: 0;
+        font-family: Cambria, sans-serif, Arial;
+        font-size: 3vw;
+        font-weight: 200;
+        color: white;
+        z-index: 1;
+    }
+
+    .intro h2 {
+        margin: 12px;
+        font-family: Cambria, sans-serif, Arial;
+        font-size: 1.8vw;
+        font-weight: 200;
+        z-index: 1;
+
+        color: #006eff;
+        text-decoration: none; /* Remove underline from links */
+        /* word-spacing: 3px; */
+    }
+
+    .intro a {
+        color: #006eff;
+        text-decoration: none; /* Remove underline from links */
+        z-index: 1;
+    }
+
+    .intro img {
+        width: 22vw;
+        height: 22vw;
+        z-index: 1;
+        position: absolute;
+        bottom: -0.8vw;
+        left: 38vw;
+        right: 33vw;
+    }
+
+}
+
+@media (min-width: 500px) {
+    .navbar svg {
+        display: none;
+    }
+
+    .navbar .link {
+        display: none;
+    }
+    
+    .mobileNavbar {
+        display: none;
+    }
 }
 
 /* change default margin and pagging for entire page */
