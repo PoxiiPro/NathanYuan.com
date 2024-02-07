@@ -1,5 +1,7 @@
 /* /////////// CSS styling for mobile view ///////// */
-@media (max-width: 500px) {
+@media screen and (max-width: 600px) {
+    
+    /* /////////// Hamburger navbar ///////// */
     .navbar {
         /* Center the navigation bar */
         position: fixed; /* navbar stays at the top while scrolling */
@@ -10,13 +12,13 @@
         background-color: #006eff; /* blue nav bar background */
         z-index: 9999;
         width: 100vw;
-        height: 8vw;
+        height: 10vw;
     }
 
     .navbar li {
         position: absolute;
         left: -100%; /* Position off-screen */
-        transition: left 0.5s ease; /* Smooth transition */    
+        transition: left 0.5s ease; /* Smooth transition */
     }
 
     /* mobile view but not hamburger expanded */
@@ -63,7 +65,7 @@
         text-decoration: none; /* Remove underline from links */
     }
 
-    /* /////////// CSS styling for the intro component ///////// */
+    /* /////////// CSS styling for the intro component mobile ///////// */
     .intro {
         margin: 0; 
         
@@ -124,7 +126,9 @@
 
 }
 
-@media (min-width: 500px) {
+
+/* hide mobile navbar when not needed */
+@media acreen and (min-width: 601px) {
     .navbar svg {
         display: none;
     }
