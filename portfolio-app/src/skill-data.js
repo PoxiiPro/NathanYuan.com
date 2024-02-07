@@ -5,9 +5,9 @@ import python from './src images/python.png'
 import css from './src images/css.png'
 import html from './src images/html.png'
 import js from './src images/js.png'
-// import C from './src images/C.png'
-// import cPlusPlus from './src images/C++.png'
-// import Github from './src images/Github.png'
+import C from './src images/c.png'
+import cPlusPlus from './src images/cplusplus.png'
+import Github from './src images/github.png'
 // import Terminal from './src images/Terminal.png'
 // import CommandPrompt from './src images/Command prompt.png'
 // import APIs from './src images/APIs.png'
@@ -23,9 +23,9 @@ export const dataS = [
     { tag: "CSS", img: [css, false]},
     { tag: "html", img: [html, false]},
     { tag: "JavaScript", img: [js, false]},
-    { tag: "C", img: [cartier, false]},
-    { tag: "C++", img: [cartier, false]},
-    { tag: "Github", img: [cartier, false]},
+    { tag: "C", img: [C, false]},
+    { tag: "C++", img: [cPlusPlus, false]},
+    { tag: "Github", img: [Github, false]},
     { tag: "Terminal", img: [cartier, false]},
     { tag: "Command prompt", img: [cartier, false]},
     { tag: "APIs", img: [cartier, false]},

@@ -322,10 +322,13 @@ body, html {
     font-family: Cambria, sans-serif, Arial;
     color: #efefef;
     background-color: rgba(0, 0, 0, 0.951);
-    /* gap: 10px; */
-    max-height: 60vh;
+    min-height: 65vh;
+    max-height: 100vh;
+    height: auto;
+
     width: 100vw;
     z-index: 1;
+    margin-bottom: 0px;
 }
 
 .full-tile h1 {
@@ -350,16 +353,24 @@ body, html {
     font-weight: 200;
 }
 
-.full-tile p {
+/* .full-tile p {
     font-size: 20px;
     font-weight: 200;
+} */
+
+.full-tile p {
+    font-size: 20px;
+    font-size: 1vw;
+    font-weight: 200;
+    white-space: pre-wrap;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .full-tile img {
-    /* height: 50%; */
-    /* width: auto; */
-    /* max-height: 467px; */
+    height: auto;
     max-height: 32.7vh;
+
     max-width: auto;
     bottom: 0;
     position: static;
@@ -371,9 +382,7 @@ body, html {
     font-family: Cambria, sans-serif, Arial;
     color: #efefef;
     background-color: rgba(0, 0, 0, 0.951);
-    /* gap: 10px; */
     height: auto;
-    /* max-height: 670px; */
     max-height: 70vh;
 
     z-index: 1;
@@ -398,8 +407,7 @@ body, html {
 }
 
 .full-tile-container img {
-    /* height: 50%; */
     height: 8vh;
     width: auto;
-    max-height: 100px;
+    /* max-height: 100px; */
 }

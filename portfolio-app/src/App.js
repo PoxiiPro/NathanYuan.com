@@ -13,6 +13,7 @@ import { dataS } from './skill-data.js';
 import { dataE } from './edu-data.js';
 import { dataW } from './work-data.js';
 import { dataP } from './project-data.js';
+import { dataL } from './leadership-data.js';
 
 // import ucsc photo of me
 // import ucsc from './src images/ucsc.png'
@@ -50,9 +51,9 @@ function App() {
         ))}
       </div> */}
 
-      <div className="full-tile" id='skills'>
+      {/* <div className="full-tile" id='skills'>
         <FullTile data={dataS}/>
-      </div>
+      </div> */}
 
       <div className="tile-container" id="work">
         {dataW.map((item, index) => (
@@ -63,6 +64,10 @@ function App() {
       <div className="full-tile" id="edu">
         {/* <FullTile name={"University of California, Santa Cruz"} title={"Bachelor's Degree in Computer Science"} skills={"June 2023"} img={ucsc}/> */}
         <FullTile data={dataE}/>
+      </div>
+
+      <div className="full-tile" id="leadership">
+        <FullTile data={dataL}/>
       </div>
 
       {/* these components are page specific */}
