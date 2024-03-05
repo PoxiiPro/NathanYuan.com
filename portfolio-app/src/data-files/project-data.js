@@ -13,7 +13,7 @@ export const dataP = [
   desc:
 "- Worked within a team of 6 to develop a carpool py4web app for student users near campus to coordinate travel \n\n- Developed a list of available drivers or riders using python and vue.js for back end \n\n- Implemented google map view using javascript api, direct message feature, and edit profile/schedule feature"
   },
-  { name: "Portfolio Website", title: "Front End Engineer", skills: "React js, HTML, CSS, JS, Vue.js, Github Pages",
+  { name: "Portfolio Website", title: "Front End Engineer", skills: "React.js, HTML, CSS, JS, Github Pages, Firebase, chatGPT API",
   desc:
 "  - Developed this static website to house my portfolio and learn react js \n\n- Utilized github pages to host static website \n\n- Learned the correct Google domain anme system setup to have a custom domain name for this site"
     },
