@@ -1,5 +1,5 @@
 // all data for my edu
-import ucsc from './src images/ucsc.png'
+import ucsc from '../src images/ucsc.png'
 
 export const dataE = [
   { name: "University of California, Santa Cruz", title: "Bachelor's Degree in Computer Science", 

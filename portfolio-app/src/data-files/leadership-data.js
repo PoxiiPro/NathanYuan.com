@@ -1,5 +1,5 @@
 // all data for my leadership
-import ucsc from './src images/ucsc.png'
+import ucsc from '../src images/ucsc.png'
 
 export const dataL = [
   { name: "Chinese Student Association & Korean American Student Association", title: "Public Relations Board Member / Social Media Coordinator Board Member", 

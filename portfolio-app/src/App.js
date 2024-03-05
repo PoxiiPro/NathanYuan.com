@@ -7,13 +7,14 @@ import Navbar from './navbar';
 import Intro from './intro';
 import Tile from './tile';
 import FullTile from './full-tile';
+import ChatBox from './chatbot/chatbox.js';
 
 // data files for tiles
 // import { dataS } from './skill-data.js';
-import { dataE } from './edu-data.js';
-import { dataW } from './work-data.js';
-import { dataP } from './project-data.js';
-import { dataL } from './leadership-data.js';
+import { dataE } from './data-files/edu-data.js';
+import { dataW } from './data-files/work-data.js';
+import { dataP } from './data-files/project-data.js';
+import { dataL } from './data-files/leadership-data.js';
 
 // import ucsc photo of me
 // import ucsc from './src images/ucsc.png'
@@ -33,6 +34,7 @@ function App() {
     <div className="App">
       {/* nav bar is global, on all webpages */}
       <Navbar/>
+      <ChatBox/>
       <Intro/>
       {/* <h1>Projects</h1> */}
       <div className="tile-container" id="projects">

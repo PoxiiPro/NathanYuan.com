@@ -1,3 +1,292 @@
+/* /////////////////////////// Desktop view //////////////////////////*/
+/* hide mobile navbar when not needed */
+@media screen and (min-width: 800px) {
+    .navbar svg {
+        display: none;
+    }
+
+    .navbar .link {
+        display: none;
+    }
+    
+    .mobileNavbar {
+        display: none;
+    }
+
+
+    /* change default margin and pagging for entire page */
+    body, html {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+    }
+
+    /* /////////// CSS styling for the nav bar component ///////// */
+    .navbar {
+        /* Remove default list styling */
+        list-style-type: none;
+        
+        /* Center the navigation bar */
+        position: fixed; /* navbar stays at the top while scrolling */
+        top: 0;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #006eff; /* blue nav bar background */
+        display: flex;
+        justify-content: center;
+        z-index: 99999;
+        width: 100vw;
+    }
+
+    /* Style for each item in the navigation bar */
+    .navbar li {
+        float: left; /* Align items horizontally */
+    }
+
+    /* Style for each link in the navigation bar */
+    .navbar li .link {
+        font-family: Cambria, Arial, Lato;
+        font-size: 12px;
+        display: block;
+        color: rgb(241, 241, 241); /* Off white text color */
+        text-align: center;
+        padding: 14px 16px; /* Padding around text */
+        text-decoration: none; /* Remove underline from links */
+    }
+
+    /* /////////// CSS styling for the intro component ///////// */
+    .intro {
+        margin: 0; 
+        
+        height: 40vw;
+        width: 100vw;
+        z-index: 1;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.951);
+    }
+
+    .intro header {
+        padding-top: 60px;
+        font-family: Cambria, sans-serif, Arial;
+        font-size: 5vw;
+        font-weight: 700;
+        color: white;
+        z-index: 1;
+    }
+
+    .intro h1 {
+        margin: 0;
+        font-family: Cambria, sans-serif, Arial;
+        font-size: 3vw;
+        font-weight: 200;
+        color: white;
+        z-index: 1;
+    }
+
+    .intro h2 {
+        margin: 12px;
+        font-family: Cambria, sans-serif, Arial;
+        font-size: 1.8vw;
+        font-weight: 200;
+        z-index: 1;
+
+        color: #006eff;
+        text-decoration: none; /* Remove underline from links */
+        /* word-spacing: 3px; */
+    }
+
+    .intro a {
+        color: #006eff;
+        text-decoration: none; /* Remove underline from links */
+        z-index: 1;
+    }
+
+    .intro img {
+        width: 23.1vw;
+        height: 23.1vw;
+        z-index: 1;
+        position: absolute;
+        bottom: -0.8vw;
+        left: 38vw;
+        right: 33vw;
+    }
+
+    /* /////////// CSS styling for the tile component ///////// */
+    .tile-container {
+        padding-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding-bottom: 10px;
+        z-index: 1;
+
+        width: calc(100vw); 
+    }
+
+    .tile {
+        font-family: Cambria, sans-serif, Arial;
+        color: rgba(0, 0, 0, 0.951);
+        /* width: 32.3%; */
+        
+        /* min-height: 450px; */
+        /* height: auto; */
+        /* max-height: 450px; */
+        background-color: #efefef;
+
+        /* make the tile stay as a square and scale with viewport */
+        width: calc(100vw); 
+        /* height: calc(100vw - 0px);  */
+
+        /* max of 3 tiles per row */
+        max-width: 32.4%;
+        height: 0;
+        padding-bottom: 30%;
+    }
+
+    .tile h1 {
+        padding-top: 30px;
+        margin: 0;
+        /* font-size: 55px; */
+        font-size: 4vw;
+        font-weight: 700;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .tile h2 {
+        margin: 0;
+        /* font-size: 30px; */
+        font-size: 2vw;
+        font-weight: 400;
+    }
+
+    .tile h3 {
+        margin: 0;
+        /* font-size: 20px; */
+        font-size: 1.5vw;
+        font-weight: 200;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .tile p {
+        font-size: 20px;
+        font-size: 1vw;
+        font-weight: 200;
+        white-space: pre-wrap;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .tile img {
+        position: static;
+        /* width: 170px; */
+        width: 12vw;
+        /* height: 170px; */
+        height: 12lvw;
+        /* padding-bottom: 100%; */
+        /* bottom: 0; */
+    }
+
+    /* /////////// CSS styling for a full tile component ///////// */
+    .full-tile {
+        font-family: Cambria, sans-serif, Arial;
+        color: #efefef;
+        background-color: rgba(0, 0, 0, 0.951);
+        min-height: 65vh;
+        max-height: 100vh;
+        height: auto;
+
+        width: 100vw;
+        z-index: 1;
+        margin-bottom: 0px;
+    }
+
+    .full-tile h1 {
+        padding-top: 50px;
+        margin: 0;
+        /* font-size: 60px; */
+        font-size: 5vw;
+        font-weight: 700;
+    }
+
+    .full-tile h2 {
+        margin: 0;
+        /* font-size: 30px; */
+        font-size: 3vw;
+        font-weight: 400;
+    }
+
+    .full-tile h3 {
+        margin: 0;
+        /* font-size: 20px; */
+        font-size: 1.8vw;
+        font-weight: 200;
+    }
+
+    /* .full-tile p {
+        font-size: 20px;
+        font-weight: 200;
+    } */
+
+    .full-tile p {
+        font-size: 1vw;
+        font-weight: 200;
+        white-space: pre-wrap;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .full-tile img {
+        height: auto;
+        max-height: 32.7vh;
+
+        max-width: auto;
+        bottom: 0;
+        position: static;
+    }
+
+    /* /////////// CSS styling for list of tiles component ///////// */
+
+    .full-tile-container {
+        font-family: Cambria, sans-serif, Arial;
+        color: #efefef;
+        background-color: rgba(0, 0, 0, 0.951);
+        height: auto;
+        max-height: 70vh;
+
+        z-index: 1;
+
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 5px;
+        padding-right: 5px;
+
+    }
+
+    .full-tile-container h4 {
+        margin-bottom: 5vh;
+        margin-top: -0.5vh;
+
+        /* font-size: 20px; */
+        font-size: 1.2vw;
+        font-weight: 200;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .full-tile-container img {
+        height: 8vh;
+        width: auto;
+        /* max-height: 100px; */
+    }
+}
+
 /* /////////// CSS styling for mobile view ///////// */
 @media screen and (max-width: 800px) {
 
@@ -251,309 +540,6 @@
     }
 
     /* /////////// CSS styling for list of tiles component mobile ///////// */
-
-    .full-tile-container {
-        font-family: Cambria, sans-serif, Arial;
-        color: #efefef;
-        background-color: rgba(0, 0, 0, 0.951);
-        height: auto;
-        max-height: 70vh;
-
-        z-index: 1;
-
-        justify-content: center;
-        display: flex;
-        flex-wrap: wrap;
-        padding-left: 5px;
-        padding-right: 5px;
-
-    }
-
-    .full-tile-container h4 {
-        margin-bottom: 5vh;
-        margin-top: -0.5vh;
-
-        /* font-size: 20px; */
-        font-size: 1.2vw;
-        font-weight: 200;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .full-tile-container img {
-        height: 8vh;
-        width: auto;
-        /* max-height: 100px; */
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* hide mobile navbar when not needed */
-                                        /* /////////////////////////// Desktop view //////////////////////////*/
-@media screen and (min-width: 800px) {
-    .navbar svg {
-        display: none;
-    }
-
-    .navbar .link {
-        display: none;
-    }
-    
-    .mobileNavbar {
-        display: none;
-    }
-
-
-    /* change default margin and pagging for entire page */
-    body, html {
-        margin: 0;
-        padding: 0;
-        width: 100vw;
-    }
-
-    /* /////////// CSS styling for the nav bar component ///////// */
-    .navbar {
-        /* Remove default list styling */
-        list-style-type: none;
-        
-        /* Center the navigation bar */
-        position: fixed; /* navbar stays at the top while scrolling */
-        top: 0;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #006eff; /* blue nav bar background */
-        display: flex;
-        justify-content: center;
-        z-index: 99999;
-        width: 100vw;
-    }
-
-    /* Style for each item in the navigation bar */
-    .navbar li {
-        float: left; /* Align items horizontally */
-    }
-
-    /* Style for each link in the navigation bar */
-    .navbar li .link {
-        font-family: Cambria, Arial, Lato;
-        font-size: 12px;
-        display: block;
-        color: rgb(241, 241, 241); /* Off white text color */
-        text-align: center;
-        padding: 14px 16px; /* Padding around text */
-        text-decoration: none; /* Remove underline from links */
-    }
-
-    /* /////////// CSS styling for the intro component ///////// */
-    .intro {
-        margin: 0; 
-        
-        height: 40vw;
-        width: 100vw;
-        z-index: 1;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        background-color: rgba(0, 0, 0, 0.951);
-    }
-
-    .intro header {
-        padding-top: 60px;
-        font-family: Cambria, sans-serif, Arial;
-        font-size: 5vw;
-        font-weight: 700;
-        color: white;
-        z-index: 1;
-    }
-
-    .intro h1 {
-        margin: 0;
-        font-family: Cambria, sans-serif, Arial;
-        font-size: 3vw;
-        font-weight: 200;
-        color: white;
-        z-index: 1;
-    }
-
-    .intro h2 {
-        margin: 12px;
-        font-family: Cambria, sans-serif, Arial;
-        font-size: 1.8vw;
-        font-weight: 200;
-        z-index: 1;
-
-        color: #006eff;
-        text-decoration: none; /* Remove underline from links */
-        /* word-spacing: 3px; */
-    }
-
-    .intro a {
-        color: #006eff;
-        text-decoration: none; /* Remove underline from links */
-        z-index: 1;
-    }
-
-    .intro img {
-        width: 23.1vw;
-        height: 23.1vw;
-        z-index: 1;
-        position: absolute;
-        bottom: -0.8vw;
-        left: 38vw;
-        right: 33vw;
-    }
-
-    /* /////////// CSS styling for the tile component ///////// */
-    .tile-container {
-        padding-top: 10px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-        padding-bottom: 10px;
-        z-index: 1;
-
-        width: calc(100vw); 
-    }
-
-    .tile {
-        font-family: Cambria, sans-serif, Arial;
-        color: rgba(0, 0, 0, 0.951);
-        /* width: 32.3%; */
-        
-        /* min-height: 450px; */
-        /* height: auto; */
-        /* max-height: 450px; */
-        background-color: #efefef;
-
-        /* make the tile stay as a square and scale with viewport */
-        width: calc(100vw); 
-        /* height: calc(100vw - 0px);  */
-
-        /* max of 3 tiles per row */
-        max-width: 32.4%;
-        height: 0;
-        padding-bottom: 30%;
-    }
-
-    .tile h1 {
-        padding-top: 30px;
-        margin: 0;
-        /* font-size: 55px; */
-        font-size: 4vw;
-        font-weight: 700;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .tile h2 {
-        margin: 0;
-        /* font-size: 30px; */
-        font-size: 2vw;
-        font-weight: 400;
-    }
-
-    .tile h3 {
-        margin: 0;
-        /* font-size: 20px; */
-        font-size: 1.5vw;
-        font-weight: 200;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .tile p {
-        font-size: 20px;
-        font-size: 1vw;
-        font-weight: 200;
-        white-space: pre-wrap;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-    .tile img {
-        position: static;
-        /* width: 170px; */
-        width: 12vw;
-        /* height: 170px; */
-        height: 12lvw;
-        /* padding-bottom: 100%; */
-        /* bottom: 0; */
-    }
-
-    /* /////////// CSS styling for a full tile component ///////// */
-
-    .full-tile {
-        font-family: Cambria, sans-serif, Arial;
-        color: #efefef;
-        background-color: rgba(0, 0, 0, 0.951);
-        min-height: 65vh;
-        max-height: 100vh;
-        height: auto;
-
-        width: 100vw;
-        z-index: 1;
-        margin-bottom: 0px;
-    }
-
-    .full-tile h1 {
-        padding-top: 50px;
-        margin: 0;
-        /* font-size: 60px; */
-        font-size: 5vw;
-        font-weight: 700;
-    }
-
-    .full-tile h2 {
-        margin: 0;
-        /* font-size: 30px; */
-        font-size: 3vw;
-        font-weight: 400;
-    }
-
-    .full-tile h3 {
-        margin: 0;
-        /* font-size: 20px; */
-        font-size: 1.8vw;
-        font-weight: 200;
-    }
-
-    /* .full-tile p {
-        font-size: 20px;
-        font-weight: 200;
-    } */
-
-    .full-tile p {
-        font-size: 1vw;
-        font-weight: 200;
-        white-space: pre-wrap;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-    .full-tile img {
-        height: auto;
-        max-height: 32.7vh;
-
-        max-width: auto;
-        bottom: 0;
-        position: static;
-    }
-
-    /* /////////// CSS styling for list of tiles component ///////// */
 
     .full-tile-container {
         font-family: Cambria, sans-serif, Arial;

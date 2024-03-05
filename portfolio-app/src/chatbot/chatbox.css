@@ -1,0 +1,116 @@
+/* /////////////////////////// Desktop view //////////////////////////*/
+@media screen and (min-width: 800px) {
+  .chat-container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 10px;
+    z-index: 10;
+  
+    /* Aligns icons to the right */
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* window minimized */
+  .chat-button {
+    width: 5vw;
+    height: 10vh;
+    font-size: 4vw;
+    border: 0;
+    background-color: transparent;
+  }
+
+  /* button to close chatbox */
+  .chat-button.open {
+    width: 100%;
+    font-size: 1vw;
+    text-align: right;
+    font-weight: bold;
+    max-height: 3vh;
+    height: auto;
+    background-color: whitesmoke;
+    border: 0.10px outset rgba(0, 0, 0, 0.951);
+  }
+
+  .chat-box {
+    border: 0.10px outset rgba(0, 0, 0, 0.951);
+    width: 15vw;
+    height: 40vh;
+    overflow-y: scroll;
+    background-color: whitesmoke;
+    margin-bottom: 10px;
+
+     /* create two rows: one that takes up all available space keeping the input bar at the bottom, and one that adjusts to its content */
+    display: grid;
+    grid-template-rows: 1fr auto;
+  }
+
+  .chat-container input {
+    position: static;
+    margin-bottom: 10px;
+    z-index: 11;
+    align-self: flex-end;
+    width: 75%;
+  }
+
+  /* enter text box when window open */
+  .user-messages {
+  /* Aligns items to the right */  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+  /* user chat bubble */
+  .user {
+    background-color: #007aff;
+    text-align: left;
+    width: auto;
+    max-width: 33%;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    word-wrap: break-word;
+  }
+}
+
+/* /////////////////////////// Mobile view //////////////////////////*/
+@media screen and (max-width: 800px) {
+  .chat-container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    z-index: 99999;
+    background-color: #006eff;
+  }
+
+  .chat-button {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    transition: 0.3s all;
+  }
+
+  .chat-button.open {
+    transform: rotate(45deg);
+  }
+
+  .chat-box {
+    border: 1px solid black;
+    width: 300px;
+    height: 400px;
+    overflow: auto;
+  }
+
+  .chat-messages {
+    margin-bottom: 20px;
+  }
+
+  .user {
+    text-align: right;
+  }
+}
