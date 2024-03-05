@@ -15,7 +15,7 @@ export const dataP = [
   },
   { name: "Portfolio Website", title: "Fullstack Engineer", skills: "React.js, HTML, CSS, JS, Github Pages, Firebase, chatGPT API",
   desc:
-"  - Developed this static website to house my portfolio and learn react js \n\n- Utilized github pages to host static website \n\n- Learned the correct Google domain anme system setup to have a custom domain name for this site"
+"  - Developed this static website to house my portfolio and learn react js \n\n- Utilized github pages to host front end and firebase to create a backend \n\n- Learned the correct Google domain name system setup to have a custom domain name for this site"
     },
   { name: "Linktree Inspired Website", title: "Full End Engineer", skills: "HTML, CSS, JS, Github Pages",
   desc:
