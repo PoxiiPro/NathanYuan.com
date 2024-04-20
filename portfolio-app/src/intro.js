@@ -22,7 +22,7 @@ const Intro = () => {
                 <header>Nathan Yuan</header>
                 <h1>Software Engineer</h1>
                 <h2>
-                    <a href="https://docs.google.com/document/d/13OsXVn3hZYaG93w5ctwk_jRLH1cOswuSSHA-1sopxcs/edit#heading=h.o0p5zpbbfvv3" target="_blank" rel="noreferrer">Resume <FaFileAlt /></a>                 
+                    <a href="https://drive.google.com/file/d/1ZMMmN7CUAicpeIyAvz_WClqGvMjDVaIz/view?usp=drive_link" target="_blank" rel="noreferrer">Resume <FaFileAlt /></a>                 
                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="mailto:NathanYuan00@icloud.com?subject= &body= " target="_blank" rel="noreferrer"> NathanYuan00@icloud.com <FaEnvelope /></a>
                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="https://github.com/PoxiiPro?tab=repositories" target="_blank" rel="noreferrer"> GitHub <FaCodeBranch /></a>
                     <div>
